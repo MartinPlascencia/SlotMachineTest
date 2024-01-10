@@ -45,7 +45,7 @@ public class Reel : MonoBehaviour
 
     public void SpinReel(int winnerIndex, float spinTime)
     {
-        Debug.Log(winnerIndex + " winnerIndex " + _reelStrip[winnerIndex]);
+        //Debug.Log(winnerIndex + " winnerIndex " + _reelStrip[winnerIndex]);
         int numberOfSpaces;
         if(winnerIndex < _currentIndex){
             numberOfSpaces = _reelStrip.Length - _currentIndex + winnerIndex;
@@ -61,7 +61,17 @@ public class Reel : MonoBehaviour
 
     public void AnimateWinnerSprite()
     {
-        winnerSprite.DOScale(1.2f, 0.5f).SetLoops(2, LoopType.Yoyo);
+        winnerSprite.DOScale(1.5f, 0.3f).SetLoops(-1, LoopType.Yoyo);
+    }
+
+    public void StopAnimatingWinnerSprite()
+    {
+        if(winnerSprite == null)
+        {
+            return;
+        }
+        winnerSprite.DOKill();
+        winnerSprite.localScale = Vector3.one;
     }
 
     private void CheckSpritesPosition()

@@ -6,6 +6,7 @@ using TMPro;
 
 public class UIController : MonoBehaviour
 {
+    [Header("UI Texts")]
     [SerializeField]
     private TMP_Text _winAmountText;
     [SerializeField]

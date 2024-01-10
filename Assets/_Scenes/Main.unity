@@ -1457,6 +1457,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilesOffsetY: 122
   _minimumSpacesToRound: 6
+  _winnerSpriteScale: 1.5
+  _winnerScaleTime: 0.3
 --- !u!1001 &633387575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1746,6 +1748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilesOffsetY: 122
   _minimumSpacesToRound: 6
+  _winnerSpriteScale: 1.5
+  _winnerScaleTime: 0.3
 --- !u!1 &823102981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3905,6 +3909,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilesOffsetY: 122
   _minimumSpacesToRound: 6
+  _winnerSpriteScale: 1.5
+  _winnerScaleTime: 0.3
 --- !u!224 &2023515058 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5778074555546292362, guid: eb8e31af3c13f0d4a86252645b3d43f0, type: 3}

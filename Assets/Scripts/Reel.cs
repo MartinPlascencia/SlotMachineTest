@@ -12,6 +12,11 @@ public class Reel : MonoBehaviour
     private float _tilesOffsetY = 122f;
     [SerializeField]
     private int _minimumSpacesToRound = 6;
+    [Header("Winner Sprite Settings")]
+    [SerializeField]
+    private float _winnerSpriteScale = 1.5f;
+    [SerializeField]
+    private float _winnerScaleTime = 0.3f;
     private int _imageIndex = 0;
     private string[] _reelStrip;
     private SpriteImagesController _spriteImagesController;
@@ -61,7 +66,7 @@ public class Reel : MonoBehaviour
 
     public void AnimateWinnerSprite()
     {
-        winnerSprite.DOScale(1.5f, 0.3f).SetLoops(-1, LoopType.Yoyo);
+        winnerSprite.DOScale(_winnerSpriteScale, _winnerScaleTime).SetLoops(-1, LoopType.Yoyo);
     }
 
     public void StopAnimatingWinnerSprite()
